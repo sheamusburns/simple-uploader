@@ -11,12 +11,14 @@ const server = http.createServer((req, res) => {
 	if (path === '/upload' && req.method === 'GET') {
 		send('./index.html').to(res);
 	} 
-	if (path == '/upload' && req.method == 'POST') {
+
+	if (path === '/upload' && req.method === 'POST') {
 		let form = new mp.Form({uploadDir:'uploads'});
 		form.parse(req, function(err, fields, files) {
       send('./index.html').to(res);
     });
 	}
+
 	if (path === '/list' && req.method === 'GET') {
 		console.log('yes')
 		html = "<!DOCTYPE html><html><head></head><body><ul>"
