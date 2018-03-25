@@ -1,0 +1,10 @@
+{
+  "name": "uploader",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sheamus Burns <sheamusburns@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "multiparty": "^4.1.3"
+  }
+}
