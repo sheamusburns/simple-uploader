@@ -40,7 +40,7 @@ const server = http.createServer((req, res) => {
 		fs.readdir('uploads', (err, ls) => {
 			if (err) throw err;
 			ls.forEach(i => {
-				html+= "<div style='margin-top:10px; margin-bottom:10px'><img src='/uploads?id="+i+"' /></div>"
+				html+= "<div style='margin-top:10px; margin-bottom:10px'><img style='height:100px' src='/uploads?id="+i+"' /></div>"
 			})
 			html+="</body></html>"
 			// console.log(ls)
